@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos - align-content</title>
+  <style>
+    .container {
+      max-width: 350px;
+      height: 400px;
+      border: 1px solid black;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .item {
+      background-color: blueviolet;
+      margin: 5px;
+      text-align: center;
+      color: white;
+      padding: 0 5px;
+      flex: 1;
+    }
+
+    .flex-start {
+      align-content: flex-start;
+    }
+
+    .center {
+      align-content: center;
+    }
+
+    .flex-end {
+      align-content: flex-end;
+    }
+
+    .stretch {
+      align-content: stretch;
+    }
+
+    .space-between {
+      align-content: space-between;
+    }
+
+    .space-around {
+      align-content: space-around;
+    }
+  </style>
+</head>
+
+<body>
+  <!--==========================================
+                  ROW
+===========================================-->
+  <h1>row</h1>
+  <p>flex-start</p>
+  <section class="container row flex-start">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2. Mais texto para quebra de linha</div>
+    <div class="item">Item 3. Mais texto que o anterior para quebra de linha maior ainda!!!</div>
+  <div class="item">Item 4. Mais texto!</div>
+  <div class="item">Item 5. Um pouco mais de texto!</div>
+  <div class="item">Item 6. Textinho pequeno.</div>
+  <div class="item">Item 7. OK! Ja ta bom de texto.</div>
+  </section>
+
+  <p>center</p>
+  <section class="container row center">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2. Mais texto para quebra de linha</div>
+    <div class="item">Item 3. Mais texto que o anterior para quebra de linha maior ainda!!!</div>
+  <div class="item">Item 4. Mais texto!</div>
+  <div class="item">Item 5. Um pouco mais de texto!</div>
+  <div class="item">Item 6. Textinho pequeno.</div>
+  <div class="item">Item 7. OK! Ja ta bom de texto.</div>
+  </section>
+
+  <p>flex-end</p>
+  <section class="container row flex-end">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2. Mais texto para quebra de linha</div>
+    <div class="item">Item 3. Mais texto que o anterior para quebra de linha maior ainda!!!</div>
+  <div class="item">Item 4. Mais texto!</div>
+  <div class="item">Item 5. Um pouco mais de texto!</div>
+  <div class="item">Item 6. Textinho pequeno.</div>
+  <div class="item">Item 7. OK! Ja ta bom de texto.</div>
+  </section>
+
+  <p>space-between</p>
+  <section class="container row space-between">
+    <div class="item"><br>Item 1</div>
+    <div class="item">Item 2. Mais texto para quebra de linha</div>
+    <div class="item">Item 3. Mais texto que o anterior para quebra de linha maior ainda!!!</div>
+  <div class="item">Item 4. Mais texto!</div>
+  <div class="item">Item 5. Um pouco mais de texto!</div>
+  <div class="item">Item 6. Textinho pequeno.</div>
+  <div class="item">Item 7. OK! Ja ta bom de texto.</div>
+  </section>
+
+  <p>space-around</p>
+  <section class="container row space-around">
+    <div class="item"><br>Item 1</div>
+    <div class="item">Item 2. Mais texto para quebra de linha</div>
+    <div class="item">Item 3. Mais texto que o anterior para quebra de linha maior ainda!!!</div>
+  <div class="item">Item 4. Mais texto!</div>
+  <div class="item">Item 5. Um pouco mais de texto!</div>
+  <div class="item">Item 6. Textinho pequeno.</div>
+  <div class="item">Item 7. OK! Ja ta bom de texto.</div>
+  </section>
+
+  <p>stretch</p>
+  <section class="container row stretch">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2. Mais texto para quebra de linha</div>
+    <div class="item">Item 3. Mais texto que o anterior para quebra de linha maior ainda!!!</div>
+  <div class="item">Item 4. Mais texto!</div>
+  <div class="item">Item 5. Um pouco mais de texto!</div>
+  <div class="item">Item 6. Textinho pequeno.</div>
+  <div class="item">Item 7. OK! Ja ta bom de texto.</div>
+  </section>
+  <!--==========================================
+                  COLUMN
+===========================================
+  <h1>column</h1>
+  <p>flex-start</p>
+  <section class="container column flex-start">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2. Mais texto para quebra de linha</div>
+    <div class="item">Item 3. Mais texto que o anterior para quebra de linha maior ainda!!!</div>
+  <div class="item">Item 4. Mais texto!</div>
+  <div class="item">Item 5. Um pouco mais de texto!</div>
+  <div class="item">Item 6. Textinho pequeno.</div>
+  <div class="item">Item 7. OK! Ja ta bom de texto.</div>
+  </section>
+
+  <p>center</p>
+  <section class="container column center">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2. Mais texto para quebra de linha</div>
+    <div class="item">Item 3. Mais texto que o anterior para quebra de linha maior ainda!!!</div>
+  <div class="item">Item 4. Mais texto!</div>
+  <div class="item">Item 5. Um pouco mais de texto!</div>
+  <div class="item">Item 6. Textinho pequeno.</div>
+  <div class="item">Item 7. OK! Ja ta bom de texto.</div>
+  </section>
+
+  <p>flex-end</p>
+  <section class="container column flex-end">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2. Mais texto para quebra de linha</div>
+    <div class="item">Item 3. Mais texto que o anterior para quebra de linha maior ainda!!!</div>
+  <div class="item">Item 4. Mais texto!</div>
+  <div class="item">Item 5. Um pouco mais de texto!</div>
+  <div class="item">Item 6. Textinho pequeno.</div>
+  <div class="item">Item 7. OK! Ja ta bom de texto.</div>
+  </section>
+
+  <p>space-between</p>
+  <section class="container column space-between">
+    <div class="item"><br>Item 1</div>
+    <div class="item">Item 2. Mais texto para quebra de linha</div>
+    <div class="item">Item 3. Mais texto que o anterior para quebra de linha maior ainda!!!</div>
+  <div class="item">Item 4. Mais texto!</div>
+  <div class="item">Item 5. Um pouco mais de texto!</div>
+  <div class="item">Item 6. Textinho pequeno.</div>
+  <div class="item">Item 7. OK! Ja ta bom de texto.</div>
+  </section>
+
+  <p>space-around</p>
+  <section class="container column space-around">
+    <div class="item"><br>Item 1</div>
+    <div class="item">Item 2. Mais texto para quebra de linha</div>
+    <div class="item">Item 3. Mais texto que o anterior para quebra de linha maior ainda!!!</div>
+  <div class="item">Item 4. Mais texto!</div>
+  <div class="item">Item 5. Um pouco mais de texto!</div>
+  <div class="item">Item 6. Textinho pequeno.</div>
+  <div class="item">Item 7. OK! Ja ta bom de texto.</div>
+  </section>
+
+
+  <p>stretch</p>
+  <section class="container column stretch">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2. Mais texto para quebra de linha</div>
+    <div class="item">Item 3. Mais texto que o anterior para quebra de linha maior ainda!!!</div>
+  <div class="item">Item 4. Mais texto!</div>
+  <div class="item">Item 5. Um pouco mais de texto!</div>
+  <div class="item">Item 6. Textinho pequeno.</div>
+  <div class="item">Item 7. OK! Ja ta bom de texto.</div>
+  </section>
+
+  <p>Alinhamento central</p>
+  <section class="container center central">
+    <div class="item">Lorem ipsum dolor, sit amet consectetur elit. Autem at eligendi, rerum tempore quidem qui.</div>
+  <div class="item">Item 4. Mais texto!</div>
+  <div class="item">Item 5. Um pouco mais de texto!</div>
+  <div class="item">Item 6. Textinho pequeno.</div>
+  <div class="item">Item 7. OK! Ja ta bom de texto.</div>
+  </section>-->
+</body>
+
+</html>
