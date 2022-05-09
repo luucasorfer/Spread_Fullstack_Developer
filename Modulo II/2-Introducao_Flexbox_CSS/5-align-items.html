@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos - align-items</title>
+  <style>
+    .container {
+      max-width: 400px;
+      border: 1px solid black;
+      margin: 0;
+      display: flex;
+    }
+
+    .item {
+      background-color: blueviolet;
+      margin: 5px;
+      text-align: center;
+      color: white;
+      flex: 1;
+    }
+
+    .row {
+      flex-direction: row;
+    }
+
+    .column {
+      flex-direction: column;
+    }
+
+    .central{
+      height: 300px;
+      justify-content: center;
+    }
+
+    .center .item{
+      flex: 0;
+      padding: 20px;
+    }
+
+    .flex-start {
+      align-items: flex-start;
+    }
+
+    .center {
+      align-items: center;
+    }
+
+    .flex-end {
+      align-items: flex-end;
+    }
+
+    .stretch {
+      align-items: stretch;
+    }
+
+    .baseline {
+      align-items: baseline;
+    }
+  </style>
+</head>
+
+<body>
+  <!--==========================================
+                  ROW
+===========================================-->
+  <h1>row</h1>
+  <p>flex-start</p>
+  <section class="container row flex-start">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2. Mais texto para quebra de linha</div>
+    <div class="item">Item 3. Mais texto que o anterior para quebra de linha maior ainda!!!</div>
+  </section>
+
+  <p>center</p>
+  <section class="container row center">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2. Mais texto para quebra de linha</div>
+    <div class="item">Item 3. Mais texto que o anterior para quebra de linha maior ainda!!!</div>
+  </section>
+
+  <p>flex-end</p>
+  <section class="container row flex-end">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2. Mais texto para quebra de linha</div>
+    <div class="item">Item 3. Mais texto que o anterior para quebra de linha maior ainda!!!</div>
+  </section>
+
+  <p>baseline</p>
+  <section class="container row baseline">
+    <div class="item"><br>Item 1</div>
+    <div class="item">Item 2. Mais texto para quebra de linha</div>
+    <div class="item">Item 3. Mais texto que o anterior para quebra de linha maior ainda!!!</div>
+  </section>
+
+  <p>stretch</p>
+  <section class="container row stretch">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2. Mais texto para quebra de linha</div>
+    <div class="item">Item 3. Mais texto que o anterior para quebra de linha maior ainda!!!</div>
+  </section>
+  <!--==========================================
+                  COLUMN
+===========================================-->
+  <h1>column</h1>
+  <p>flex-start</p>
+  <section class="container column flex-start">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2. Mais texto para quebra de linha</div>
+    <div class="item">Item 3. Mais texto que o anterior para quebra de linha maior ainda!!!</div>
+  </section>
+
+  <p>center</p>
+  <section class="container column center">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2. Mais texto para quebra de linha</div>
+    <div class="item">Item 3. Mais texto que o anterior para quebra de linha maior ainda!!!</div>
+  </section>
+
+  <p>flex-end</p>
+  <section class="container column flex-end">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2. Mais texto para quebra de linha</div>
+    <div class="item">Item 3. Mais texto que o anterior para quebra de linha maior ainda!!!</div>
+  </section>
+
+  <p>baseline</p>
+  <section class="container column baseline">
+    <div class="item"><br>Item 1</div>
+    <div class="item">Item 2. Mais texto para quebra de linha</div>
+    <div class="item">Item 3. Mais texto que o anterior para quebra de linha maior ainda!!!</div>
+  </section>
+
+  <p>stretch</p>
+  <section class="container column stretch">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2. Mais texto para quebra de linha</div>
+    <div class="item">Item 3. Mais texto que o anterior para quebra de linha maior ainda!!!</div>
+  </section>
+
+  <p>Alinhamento central</p>
+  <section class="container center central">
+    <div class="item">Lorem ipsum dolor, sit amet consectetur elit. Autem at eligendi, rerum tempore quidem qui.</div>
+  </section>
+</body>
+
+</html>
