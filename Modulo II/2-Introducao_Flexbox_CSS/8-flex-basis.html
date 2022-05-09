@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos - flex-basis</title>
+  <style>
+    .container {
+      max-width: 600px;
+      border: 1px solid black;
+      margin: 0px;
+      display: flex;
+    }
+
+    .item {
+      background-color: blueviolet;
+      margin: 5px;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    .row {
+      flex-direction: row;
+    }
+
+    .column {
+      flex-direction: column;
+    }
+
+    .fb-auto {
+      flex-basis: auto;
+    }
+
+    .fb-0 {
+      flex-basis: 0;
+    }
+
+    .w100{
+      flex-basis: 100px;
+    }
+
+    .fg-1 {
+      flex-grow: 1;
+    }
+
+    .fg-2 {
+      flex-grow: 2;
+    }
+  </style>
+</head>
+
+<body>
+  <!--==========================================
+                  ROW
+===========================================-->
+  <h1>row</h1>
+
+  <p>auto</p>
+  <section class="container row">
+    <div class="item fg-1 fb-auto">A</div>
+    <div class="item fg-1 fb-auto">BBB</div>
+    <div class="item fg-1 fb-auto">CC</div>
+    <div class="item fg-1 fb-auto">DEF</div>
+    <div class="item fg-2 fb-auto">GHIJKL</div>
+  </section>
+
+  <p>0 (zero)</p>
+  <section class="container row">
+    <div class="item fg-1 fb-0">AAAAAA</div>
+    <div class="item fg-1 fb-0">BBB</div>
+    <div class="item fg-1 fb-0">C</div>
+    <div class="item fg-1 fb-0">DEF</div>
+  </section>
+
+  <p>basis + width</p>
+  <section class="container row">
+    <div class="item fg-2 w100">A</div>
+    <div class="item fg-2 w100">BB</div>
+    <div class="item fg-2 w100">CCC</div>
+    <div class="item fg-2 w100">DDDD</div>
+  </section>
+</body>
+
+</html>
