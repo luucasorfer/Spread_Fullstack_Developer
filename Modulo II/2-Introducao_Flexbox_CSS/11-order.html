@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos - order</title>
+  <style>
+    .container {
+      max-width: 350px;
+      border: 1px solid black;
+      display: flex;
+    }
+
+    .item {
+      background-color: blueviolet;
+      color: white;
+      margin: 5px;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .row {
+      flex-direction: row;
+    }
+
+    .column {
+      flex-direction: column;
+    }
+
+    .o1 {
+      order: 1;
+    }
+
+    .o2 {
+      order: 2;
+    }
+
+    .o3 {
+      order: 3;
+    }
+
+    .o4 {
+      order: 4;
+    }
+
+    .o-1 {
+      order: -1;
+    }
+  </style>
+</head>
+
+<body>
+  <!--==========================================
+                  ROW
+  ===========================================-->
+  <h1>row</h1>
+
+  <p>order: 0</p>
+  <section class="container row">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+  </section>
+
+  <p>order: mix</p>
+  <section class="container row">
+    <div class="item o4">A</div>
+    <div class="item o2">BBB</div>
+    <div class="item o3">CC</div>
+    <div class="item o1">DEF</div>
+  </section>
+  <!--==========================================
+                  COLUMN
+  ===========================================-->
+  <p>order: mix - column</p>
+  <section class="container column">
+    <div class="item o4">A</div>
+    <div class="item o3">BBB</div>
+    <div class="item o1">CC</div>
+    <div class="item o2">DEF</div>
+    <div class="item o-1">GHIJKLMNOP</div>
+  </section>
+</body>
+
+</html>
