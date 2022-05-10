@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos - flex-shrink</title>
+  <style>
+    .container {
+      max-width: 350px;
+      border: 1px solid black;
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    .item {
+      background-color: blueviolet;
+      color: white;
+      margin: 5px;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .row {
+      flex-direction: row;
+    }
+
+    .column {
+      flex-direction: column;
+    }
+
+    .fs-0{
+      flex-shrink: 0;
+      flex-basis: 100px;
+    }
+    
+    .fs-1 {
+      flex-shrink: 1;
+    }
+
+    .fs-2{
+      flex-shrink: 2;
+      flex-basis: 100px;
+    }
+
+    .fs-3{
+      flex-shrink: 2;
+      flex-basis: 100px;
+    }
+
+    .fg-1 {
+      flex-grow: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <!--==========================================
+                  ROW
+  ===========================================-->
+  <h1>row</h1>
+
+  <p>flex-grow: 1 + flex-shrink: 1</p>
+  <section class="container row">
+    <div class="item fs-1 fg-1">A</div>
+    <div class="item fs-1 fg-1">B</div>
+    <div class="item fs-1 fg-1">C</div>
+    <div class="item fs-1 fg-1">D</div>
+  </section>
+
+  <section class="container row">
+    <div class="item fs-1 fg-1">A</div>
+    <div class="item fs-1 fg-1">BBB</div>
+    <div class="item fs-1 fg-1">CC</div>
+    <div class="item fs-1 fg-1">DEF</div>
+    <div class="item fs-1 fg-1">GHIJKLMNOP</div>
+  </section>
+
+  <p>flex-shrink: 0 + basis: 100px</p>
+  <section class="container row">
+    <div class="item fs-0 fg-1">AAAAAA</div>
+    <div class="item fs-0 fg-1">BBB</div>
+    <div class="item fs-0 fg-1">C</div>
+    <div class="item fs-0 fg-1">DEF</div>
+  </section>
+
+  <p>flex-shrink: mix + basis: 100px</p>
+  <section class="container row">
+    <div class="item fs-1 fg-1">A</div>
+    <div class="item fs-2 fg-1">BB</div>
+    <div class="item fs-2 fg-1">CCC</div>
+    <div class="item fs-3 fg-1">DDDD</div>
+  </section>
+</body>
+
+</html>
