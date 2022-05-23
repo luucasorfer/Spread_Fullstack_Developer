@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #E7E9D6;
+}
+
+button {
+    border: 1px solid rgb(105, 197, 255);
+    border-radius: 5px;
+    background-color: rgb(255, 248, 255);
+    color: rgb(105, 197, 255);
+    text-align: center;
+    padding: 5px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(105, 197, 255);
+    background-color: rgb(255, 248, 255);
+}
+
+.toDoWrapper {
+    padding: 1.25rem;
+    background-color: rgb(177, 225, 255);
+    width: 350px;
+    box-shadow: 3px 3px 3px 0 grey;
+    border-radius: 10px;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+
+#tasks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.task-item label {
+    margin-left: 10px;
+}
+
+:checked+label {
+    text-decoration: line-through;
+    color: grey;
+}
