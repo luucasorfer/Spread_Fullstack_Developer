@@ -10,4 +10,4 @@ function substituiPares(array) {
     }
   console.log(array);
 }
-substituiPares(array)
+substituiPares(array);
