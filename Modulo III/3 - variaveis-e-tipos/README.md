@@ -1,6 +1,6 @@
 # Variáveis e Tipos
 
-Neste repositório você encontrará a atividades práticas propostas pelo curso "Variáveis e Tipos" do Basecamp de Javascript utilizado no bootcamp [Spread Fullstack Developer](https://www.dio.me/bootcamp/spread-fullstack-developer) da [DIO._ (Digital Inovation One)](https://www.dio.me/) 
+Neste repositório você encontrará anotações e as atividades práticas propostas pelo curso "Variáveis e Tipos" do Basecamp de Javascript utilizado no bootcamp [Spread Fullstack Developer](https://www.dio.me/bootcamp/spread-fullstack-developer) da [DIO._ (Digital Inovation One)](https://www.dio.me/) 
 
 # var, let e const
 

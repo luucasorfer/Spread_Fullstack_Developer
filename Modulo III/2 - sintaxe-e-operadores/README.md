@@ -1,7 +1,6 @@
 # Sintaxe e Operadores
 
-Este repositório contém a atividade prática do Curso "Sintaxe e Operadores" de Javascript, que faz parte do conteúdo de aprendizado utilizado no bootcamp [Spread Fullstack Developer](https://www.dio.me/bootcamp/spread-fullstack-developer) da [DIO._ (Digital Inovation One)](https://www.dio.me/)
-
+Neste repositório você encontrará anotações e as atividades práticas propostas pelo curso "Sintaxe e Operadores" do Basecamp de Javascript utilizado no bootcamp [Spread Fullstack Developer](https://www.dio.me/bootcamp/spread-fullstack-developer) da [DIO._ (Digital Inovation One)](https://www.dio.me/) 
 ## Atividade
 
 - [ x ]. Crie uma função que recebe dois números como parâmetros.
